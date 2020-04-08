@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 const TodoItems = (props) => {
@@ -27,5 +28,14 @@ const TodoItems = (props) => {
     </li>
   );
 };
+// Can also do this.👇
+
+// TodoItems.propTypes = {
+//   todo: PropTypes.any,
+//   key: PropTypes.any,
+//   index: PropTypes.any,
+//   toggleTodoDone: PropTypes.func,
+//   removeTodo: PropTypes.func,
+// };
 
 export default TodoItems;

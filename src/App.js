@@ -16,7 +16,7 @@ class App extends Component {
     };
   }
 
-  allDone(event) {
+  allDone() {
     const todos = this.state.todos.map((todo) => {
       return {
         title: todo.title,

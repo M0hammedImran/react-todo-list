@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 const TodoForm = (props) => {
@@ -5,6 +6,7 @@ const TodoForm = (props) => {
     <form onSubmit={(event) => props.formSubmitted(event)}>
       <div className="form-group mb-5  mx-auto">
         <label htmlFor="todo">Enter Todo: </label>
+
         <input
           required
           type="text"
@@ -14,7 +16,6 @@ const TodoForm = (props) => {
           onChange={props.newTodoChanged}
           value={props.newTodo}
         />
-
         <button type="submit" className="btn btn-primary ml-3">
           Submit
         </button>
