@@ -61,16 +61,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App w-50 mx-auto">
+      <div className="App w-100 mx-auto p-2">
         <TodoForm
           newTodo={this.state.newTodo}
           formSubmitted={this.formSubmitted.bind(this)}
           newTodoChanged={this.newTodoChanged.bind(this)}
         />
 
-        <div className="list w-50% mx-auto">
+        <div className="list w-100 mx-auto">
           <button
-            className="btn btn-secondary ml-3 mb-5"
+            className="btn btn-secondary ml-1 mb-4"
             onClick={this.allDone.bind(this)}
           >
             All Done

@@ -1,10 +1,14 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TodoItems = (props) => {
   const { todo } = props;
   return (
-    <li key={props.key} className="mb-3">
+    <li
+      key={props.key}
+      className="mb-
+    3"
+    >
       <span>
         <input
           onChange={(event) => props.toggleTodoDone(event, props.index)}
@@ -28,14 +32,13 @@ const TodoItems = (props) => {
     </li>
   );
 };
-// Can also do this.👇
 
-// TodoItems.propTypes = {
-//   todo: PropTypes.any,
-//   key: PropTypes.any,
-//   index: PropTypes.any,
-//   toggleTodoDone: PropTypes.func,
-//   removeTodo: PropTypes.func,
-// };
+TodoItems.propTypes = {
+  todo: PropTypes.any,
+  key: PropTypes.any,
+  index: PropTypes.any,
+  toggleTodoDone: PropTypes.func,
+  removeTodo: PropTypes.func,
+};
 
 export default TodoItems;

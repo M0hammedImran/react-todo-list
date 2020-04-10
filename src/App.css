@@ -1,6 +1,10 @@
 .list {
   font-size: 1.2em;
-  text-align: justify;
+  text-align: left;
+  max-width: 65%;
+}
+.form {
+  max-width: 65%;
 }
 .done {
   color: rgb(164, 164, 164);
@@ -12,4 +16,33 @@ li {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+
+button {
+  display: inline-block;
+}
+ol {
+  padding-left: 0.3rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .list {
+    font-size: 1.2em;
+    text-align: left;
+    max-width: 100%;
+  }
+  .form {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .list {
+    font-size: 1.2em;
+    text-align: left;
+    max-width: 50%;
+  }
+  .form {
+    max-width: 50%;
+  }
 }

@@ -4,7 +4,7 @@ import React from 'react';
 const TodoForm = (props) => {
   return (
     <form onSubmit={(event) => props.formSubmitted(event)}>
-      <div className="form-group mb-5  mx-auto">
+      <div className="form-group form mb-4 mx-auto">
         <label htmlFor="todo">Enter Todo: </label>
 
         <input
@@ -16,7 +16,7 @@ const TodoForm = (props) => {
           onChange={props.newTodoChanged}
           value={props.newTodo}
         />
-        <button type="submit" className="btn btn-primary ml-3">
+        <button type="submit" className="btn btn-primary ml-1">
           Submit
         </button>
       </div>
